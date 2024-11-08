@@ -1,12 +1,13 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import Landing from '../components/landing'
+import Landing from '../components/Landing'
+
 
 const LandingSection = () => {
   return (
     <div>
         <NavBar/>
-        <Landing />
+      <Landing/>
       
     </div>
   )
