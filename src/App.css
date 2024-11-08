@@ -1,0 +1,43 @@
+.slick-prev::before,
+.slick-next::before {
+  content: none; /* Remove the default arrow icon */
+}
+
+/* Optionally, you can fully customize the default buttons */
+.slick-prev, .slick-next {
+  background: none; /* Remove any default background */
+  border: none; /* Remove default border */
+  top:45%;
+ 
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Remove default slick button styles */
+
+.slick-slide{
+    margin-right: 20px;
+    height: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+}
+.slick-list{
+    height:430px;
+    max-width: 1100px;
+    margin-bottom: 20px;
+}
+.slick-prev{
+    
+translate: -20px 0px;
+    z-index: 40;
+
+}
+.slick-next{
+    translate: 20px 0px;
+    z-index: 40;
+    
+}
