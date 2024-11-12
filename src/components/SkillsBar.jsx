@@ -4,6 +4,7 @@
 import React from 'react';
 import SkillBar from './SkillBar';
 import { div } from 'framer-motion/client';
+import HardSkill from '../photo/HardSkill.gif';
 
 const App = () => {
     const skills = [
@@ -22,7 +23,7 @@ const App = () => {
         <div  className=" flex justify-center">
                  <div className=' max-w-screen-xl w-full p-5'>
            <div className='flex flex-row justify-center gap-3 items-center mb-3'>
-            <img src="./src/photo/HardSkill.gif" className='size-10' alt="" />
+            <img src={HardSkill} className='size-10' alt="" />
            <h1 className="text-2xl font-bold ">Hard Skills</h1>
            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">

@@ -3,9 +3,11 @@ import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { saveAs } from 'file-saver'
+import cv from '../photo/cv.gif';
+import profile from '../photo/profile.jpg';
+
 
 const Landing = () => {
-
 
   const downloadCV = () => {
 
@@ -60,7 +62,7 @@ const Landing = () => {
     data-aos-delay="2000"
     onClick={downloadCV}
 >
-    <img src="./src/photo/cv.gif" className='size-6 mr-4' alt="CV Icon" />
+    <img src={cv} className='size-6 mr-4' alt="CV Icon" />
     Download CV
 </button>
 
@@ -70,7 +72,7 @@ const Landing = () => {
                 {/* Animated profile image */}
                 <div className='flex flex-row justify-end'>
                     <img 
-                        src="./src/photo/profile.jpg"  
+                        src={profile}  
                         className='w-1/2' 
                         alt="Profile" 
                         data-aos="fade-left"

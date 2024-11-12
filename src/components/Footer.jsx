@@ -1,5 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import phoneIcon from '../photo/phone.gif';
+import mailIcon from '../photo/mail.gif';
+import earthIcon from '../photo/earth.gif'
 
 const Footer = () => {
   const list = {
@@ -47,24 +50,24 @@ const Footer = () => {
 
       {/* Social Brands */}
       <div variants={item} className="flex flex-col gap-4 mt-4 text-third">
-        {/* Phone Contact */}
-        <motion.div variants={item} className="flex flex-row text-center items-center gap-3 justify-center footer3">
-          <img src="./src/photo/phone.gif" alt="phone icon" className="size-10" />
-          <a href="tel:09788131268">Click me to get phone contact</a>
-        </motion.div>
-        
-        {/* Email Contact */}
-        <motion.div variants={item} className="flex flex-row text-center items-center gap-3 justify-center footer4">
-          <img src="./src/photo/mail.gif" alt="mail icon" className="size-10" />
-          <a href="mailto:yekhaungkyaw123456@gmail.com">Click me to get Gmail contact</a>
-        </motion.div>
-        
-        {/* Location */}
-        <motion.div variants={item} className="flex flex-row text-center items-center gap-3 footer5 justify-center">
-          <img src="./src/photo/earth.gif" alt="earth icon" className="size-10" />
-          <h2 className="text-xl font-bold">Yangon, Kyeemyindaing</h2>
-        </motion.div>
-      </div>
+    {/* Phone Contact */}
+    <motion.div variants={item} className="flex flex-row text-center items-center gap-3 justify-center footer3">
+        <img src={phoneIcon} alt="phone icon" className="size-10" />
+        <a href="tel:09788131268">Click me to get phone contact</a>
+    </motion.div>
+
+    {/* Email Contact */}
+    <motion.div variants={item} className="flex flex-row text-center items-center gap-3 justify-center footer4">
+        <img src={mailIcon} alt="mail icon" className="size-10" />
+        <a href="mailto:yekhaungkyaw123456@gmail.com">Click me to get Gmail contact</a>
+    </motion.div>
+
+    {/* Location */}
+    <motion.div variants={item} className="flex flex-row text-center items-center gap-3 footer5 justify-center">
+        <img src={earthIcon} alt="earth icon" className="size-10" />
+        <h2 className="text-xl font-bold">Yangon, Kyeemyindaing</h2>
+    </motion.div>
+</div>
     </motion.div>
   );
 };

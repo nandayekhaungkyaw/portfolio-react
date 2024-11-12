@@ -4,6 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card.tsx";
 import { LuBadgeCheck } from "react-icons/lu";
+import softSkillImg from '../photo/SoftSkill.gif';
+import strengthImg from '../photo/Strength.gif';
+import educationImg from '../photo/Education.gif';
+import weaknessImg from '../photo/Weakness.gif';
+
 
 export function ThreeDCardDemo() {
   const list = {
@@ -36,10 +41,26 @@ export function ThreeDCardDemo() {
       className="grid grid-cols-4 max-w-screen-xl justify-between items-end mx-auto"
     >
       {[
-        { title: "Soft Skills", imgSrc: "./src/photo/SoftSkill.gif", skills: ["Stress Management", "Problem Solving", "Willingness To Learn", "Creativity"] },
-        { title: "Strength", imgSrc: "./src/photo/Strength.gif", skills: ["Responsibility", "Work Done is priority", "Research skill", "Perseverance"] },
-        { title: "Education", imgSrc: "./src/photo/Education.gif", skills: ["Second year Mechanical Student at 2020 .(TU-KSE)", "English-Intermediate level", "Still learning Backend"] },
-        { title: "Weakness", imgSrc: "./src/photo/Weakness.gif", skills: ["Focus on Efficiency Over Detail", "Preference for Challenging Tasks Over Repetitive Work", "Being junior UI/UX designer and frontend developer"] },
+        {
+          title: "Soft Skills",
+          imgSrc: softSkillImg,
+          skills: ["Stress Management", "Problem Solving", "Willingness To Learn", "Creativity"]
+      },
+      {
+          title: "Strength",
+          imgSrc: strengthImg,
+          skills: ["Responsibility", "Work Done is priority", "Research skill", "Perseverance"]
+      },
+      {
+          title: "Education",
+          imgSrc: educationImg,
+          skills: ["Second year Mechanical Student at 2020 .(TU-KSE)", "English-Intermediate level", "Still learning Backend"]
+      },
+      {
+          title: "Weakness",
+          imgSrc: weaknessImg,
+          skills: ["Focus on Efficiency Over Detail", "Preference for Challenging Tasks Over Repetitive Work", "Being junior UI/UX designer and frontend developer"]
+      }
       ].map((card, index) => (
         <motion.div key={index} variants={item}>
           <CardContainer className="inter-var h-full">
