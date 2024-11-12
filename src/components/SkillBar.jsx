@@ -37,7 +37,7 @@ const SkillBar = ({ skill, progress, index }) => {
             ref={skillBarRef} 
             data-aos="zoom-in-down"  
             data-aos-duration="1000" 
-            data-aos-delay={index * 500} // Controls the staggered delay
+         
         >
             <div className="flex justify-between mb-1">
                 <span className="font-medium text-gray-700">{skill}</span>

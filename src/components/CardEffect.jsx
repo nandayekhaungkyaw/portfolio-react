@@ -33,7 +33,7 @@ export function ThreeDCardDemo() {
   };
 
   return (
-    <motion.div
+    <motion.div id="skills"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false }}

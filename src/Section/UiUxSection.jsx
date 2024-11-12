@@ -4,7 +4,7 @@ import UiSlider from '../components/UiSlider'
 
 const UiUxSection = () => {
   return (
-    <div>
+    <div id='ui-ux'>
       <h2 className='text-2xl font-bold text-center mb-[24px]'>Ui & Ux Projects</h2>
      <UiSlider/>
     </div>

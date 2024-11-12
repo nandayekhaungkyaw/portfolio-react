@@ -5,7 +5,7 @@ import Landing from '../components/Landing'
 
 const LandingSection = () => {
   return (
-    <div>
+    <div id='landing' >
         <NavBar/>
       <Landing/>
       

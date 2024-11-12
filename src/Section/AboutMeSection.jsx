@@ -3,7 +3,7 @@ import CardEffect from '../components/CardEffect'
 
 const AboutMeSection = () => {
   return (
-    <div>
+    <div >
       <CardEffect/>
     </div>
   )

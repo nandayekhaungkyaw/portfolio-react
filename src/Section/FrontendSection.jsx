@@ -29,11 +29,11 @@ const FrontendSection = () => {
   };
 
 return (
-  <div className='flex flex-col gap-[20px]'>
+  <div id='frontend' className='flex flex-col gap-[20px]'>
     <h2 className='text-2xl font-bold text-center mt-3'>Frontend Projects</h2>
  
 <motion.ul className='max-w-screen-xl grid  grid-cols-3 gap-[20px]  justify-between items-center w-full mx-auto'  initial="hidden" // Start hidden
-        whileInView="visible"    viewport={{ once: false }}  variants={list}>
+        whileInView="visible"    viewport={{ once: true }}  variants={list}>
           
   <motion.li  variants={item}>
   <Frontend   url="https://plus.unsplash.com/premium_photo-1679784204551-013181bb687f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" link="https://invoice-label.netlify.app/" title="Invoice With Api" text="This is Best Project With api it included many function like filter,voucher history and CRUD Process"/>
