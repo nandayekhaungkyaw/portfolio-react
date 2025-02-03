@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card.tsx";
 import { LuBadgeCheck } from "react-icons/lu";
@@ -38,7 +38,8 @@ export function ThreeDCardDemo() {
       whileInView="visible"
       viewport={{ once: false }}
       variants={list}
-      className="grid grid-cols-4 max-w-screen-xl justify-between items-end mx-auto"
+      className="grid sm:w-[540px] md:w-[730px] lg:w-[1024px] xl:w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 max-w-screen-xl mx-auto px-8 lg:px-2 items-end justify-center"
+
     >
       {[
         {
@@ -65,8 +66,8 @@ export function ThreeDCardDemo() {
         <motion.div key={index} variants={item}>
           <CardContainer className="inter-var h-full">
             <CardBody className="relative h-full group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] w-fit rounded-xl p-4">
-              <CardItem translateZ="50" className="text-xl font-bold h-full text-neutral-600 dark:text-white">
-                <div className="bg-white shadow-lg rounded-lg p-4 w-72 h-full">
+              <CardItem translateZ="50" className="text-xl font-bold h-full text-neutral-600  dark:text-white">
+                <div className="bg-white shadow-lg rounded-lg p-4 xl:w-72 lg:w-60 md:w-80 sm:w-54 w-64   h-full mx-auto">
                   <div className="flex justify-center mb-2">
                     <img src={card.imgSrc} className="size-12" alt={`${card.title} icon`} />
                   </div>

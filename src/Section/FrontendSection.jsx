@@ -29,10 +29,10 @@ const FrontendSection = () => {
   };
 
 return (
-  <div id='frontend' className='flex flex-col gap-[20px]'>
+  <div id='frontend' className='flex flex-col gap-[20px]  w-[400px] mx-auto  sm:w-[550px] md:w-[660px] lg:w-[1000px] xl:w-[1220px]'>
     <h2 className='text-2xl font-bold text-center mt-3'>Frontend Projects</h2>
  
-    <motion.ul className='max-w-screen-xl grid  grid-cols-3 gap-[20px]  justify-between items-center w-full mx-auto'  initial="hidden" // Start hidden
+    <motion.ul className='max-w-screen-xl  grid sm:grid-cols-2  lg:grid-cols-3 gap-[20px]  justify-center  items-center w-full mx-auto'  initial="hidden" // Start hidden
         whileInView="visible"    viewport={{ once: true }}  variants={list}>
           
 

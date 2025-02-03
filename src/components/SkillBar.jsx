@@ -33,7 +33,7 @@ const SkillBar = ({ skill, progress, index }) => {
 
     return (
         <div 
-            className="mb-4" 
+            className="mb-4 p-4" 
             ref={skillBarRef} 
             data-aos="zoom-in-down"  
             data-aos-duration="1000" 

@@ -32,7 +32,7 @@ const Footer = () => {
       whileInView="visible" // Trigger animation when in view
       viewport={{ once: false }} // Repeat animation each time it comes into view
       variants={list} // Apply list variants for staggered animation
-      className="flex flex-col items-center"
+      className="flex flex-col items-center w-[300px] sm:w-[600px] md:w-[660px] lg:w-[1000px] xl:w-[1220px] mx-auto"
     >
       {/* Heading */}
       <motion.div variants={item} className="text-center">
@@ -43,7 +43,7 @@ const Footer = () => {
 
       {/* Description */}
       <motion.div variants={item} className="mt-3 text-center items-center flex justify-center footer2">
-        <p className="text-third w-1/2 max-sm:w-full">
+        <p className="  w-1/2 max-sm:w-full text-wrap">
           I'm currently available to take on new projects. So feel free to send me a message about anything you want me to work on. You can contact anytime.
         </p>
       </motion.div>

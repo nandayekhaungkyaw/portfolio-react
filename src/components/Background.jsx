@@ -11,56 +11,13 @@ export const Background = ({
   const parentRef = useRef(null);
 
   const beams = [
-    {
-      initialX: 10,
-      translateX: 10,
-      duration: 7,
-      repeatDelay: 3,
-      delay: 2,
-    },
-    {
-      initialX: 600,
-      translateX: 600,
-      duration: 3,
-      repeatDelay: 3,
-      delay: 4,
-    },
-    {
-      initialX: 100,
-      translateX: 100,
-      duration: 7,
-      repeatDelay: 7,
-      className: "h-6",
-    },
-    {
-      initialX: 400,
-      translateX: 400,
-      duration: 5,
-      repeatDelay: 14,
-      delay: 4,
-    },
-    {
-      initialX: 800,
-      translateX: 800,
-      duration: 11,
-      repeatDelay: 2,
-      className: "h-20",
-    },
-    {
-      initialX: 1000,
-      translateX: 1000,
-      duration: 4,
-      repeatDelay: 2,
-      className: "h-12",
-    },
-    {
-      initialX: 1200,
-      translateX: 1200,
-      duration: 6,
-      repeatDelay: 4,
-      delay: 2,
-      className: "h-6",
-    },
+    { initialX: '5%', translateX: '5%', duration: 7, repeatDelay: 3, delay: 2 },
+    { initialX: '30%', translateX: '30%', duration: 3, repeatDelay: 3, delay: 4 },
+    { initialX: '10%', translateX: '10%', duration: 7, repeatDelay: 7, className: "h-6" },
+    { initialX: '50%', translateX: '50%', duration: 5, repeatDelay: 14, delay: 4 },
+    { initialX: '70%', translateX: '70%', duration: 11, repeatDelay: 2, className: "h-20" },
+    { initialX: '85%', translateX: '85%', duration: 4, repeatDelay: 2, className: "h-12" },
+    { initialX: '95%', translateX: '95%', duration: 6, repeatDelay: 4, delay: 2, className: "h-6" },
   ];
 
   return (
@@ -150,19 +107,15 @@ const CollisionMechanism = React.forwardRef(({ parentRef, containerRef, beamOpti
     <motion.div
       key={beamKey}
       ref={beamRef}
-      animate="animate"
-      initial={{
-        translateY: beamOptions.initialY || "-200px",
-        translateX: beamOptions.initialX || "0px",
+      animate={{
+        translateY: "100vh",
+        translateX: beamOptions.translateX || "0%",
         rotate: beamOptions.rotate || 0,
       }}
-      variants={{
-        animate: {
-          translateY: beamOptions.translateY || "4800px",
-          translateX: beamOptions.translateX || "0px",
-          rotate: beamOptions.rotate || 0,
-          duration: beamOptions.duration || 10,
-        },
+      initial={{
+        translateY: "-20vh",
+        translateX: beamOptions.initialX || "0%",
+        rotate: beamOptions.rotate || 0,
       }}
       transition={{
         duration: beamOptions.duration || 10,
@@ -173,7 +126,7 @@ const CollisionMechanism = React.forwardRef(({ parentRef, containerRef, beamOpti
         repeatDelay: beamOptions.repeatDelay || 0,
       }}
       className={cn(
-        "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-indigo-500 via-purple-500 to-transparent",
+        "absolute left-0 top-[10%] m-auto h-14 w-px rounded-full bg-gradient-to-t from-indigo-500 via-purple-500 to-transparent",
         beamOptions.className
       )} />
     <AnimatePresence>
@@ -205,7 +158,7 @@ const Explosion = ({
   }));
 
   return (
-    (<div {...props} className={cn("absolute z-50 h-2 w-2", props.className)}>
+    (<div {...props} className={cn("absolute z-50 h-2 w-2 max-w-full", props.className)}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
