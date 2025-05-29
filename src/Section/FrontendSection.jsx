@@ -38,7 +38,7 @@ return (
 
   <motion.li  variants={item}>
  
-  <Frontend   url="https://i.pinimg.com/originals/7d/08/fa/7d08fa00517daa7cdfb41a606beb3f82.gif" title="Invoice With Api" text="This is Best Project With api it included many function like filter,voucher history and CRUD Process"/>
+  <Frontend   url="https://i.pinimg.com/originals/7d/08/fa/7d08fa00517daa7cdfb41a606beb3f82.gif" link="https://invoice-app-job-hunting.netlify.app/" title="Invoice With Api" text="This is Best Project With api it included many function like filter,voucher history and CRUD Process.you can do registration but for testing fake data are here| gmail- admin@gmial.com | password-asdffdsa"/>
 
   </motion.li>
   <motion.li  variants={item}>
@@ -64,7 +64,7 @@ return (
 
  
 
-  <Frontend   url="https://i.pinimg.com/originals/2e/1d/a9/2e1da94cfe8a4f8ffd23c369e9de9328.gif" link='https://coach145458.netlify.app/' title="Pathway Academy" text="This is team project internship in MMSIT and my did course ,course detail and privacy and policy pages."/>
+  <Frontend   url="https://i.pinimg.com/originals/2e/1d/a9/2e1da94cfe8a4f8ffd23c369e9de9328.gif" link='https://test-project-pathway.netlify.app/' title="Pathway Academy" text="This is team project internship in MMSIT and my did course ,course detail and privacy and policy pages."/>
 
  
 

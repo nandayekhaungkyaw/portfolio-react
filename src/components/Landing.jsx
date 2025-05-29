@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 
 import cv from '../photo/cv.gif';
 import profile from '../photo/profile.jpg';
+import profile2 from '../photo/pp.jpg';
 import { downloadCV } from '../service/download';
 
 const Landing = () => {
@@ -60,8 +61,8 @@ const Landing = () => {
                 </div>
 
                 {/* Animated profile image */}
-                <div className="flex justify-center lg:justify-end mb-6 lg:mb-0 w-full lg:w-1/2" data-aos="fade-left" data-aos-delay="1000">
-                    <img src={profile} className="w-2/3 sm:w-1/2 lg:w-full max-w-xs sm:max-w-sm lg:max-w-md" alt="Profile" />
+                <div className="flex justify-center  mb-6 lg:mb-0 w-full lg:w-1/2" data-aos="fade-left" data-aos-delay="1000">
+                    <img src={profile2} className="size-1/2 sm:w-1/2  max-w-xs sm:max-w-sm   rounded-full" alt="Profile" />
                 </div>
             </main>
         </div>
