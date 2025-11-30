@@ -35,8 +35,8 @@ const UiSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
-    speed: 2000,
+    autoplay: false,
+    speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
     pauseOnHover: true,

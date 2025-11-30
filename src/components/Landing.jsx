@@ -17,8 +17,8 @@ const Landing = () => {
     }, []);
 
     return (
-        <div className="mt-[60px] max-w-screen-xl mx-auto px-6">
-            <main className="flex flex-col-reverse lg:flex-row justify-between items-center w-full mx-auto">
+        <div className="mt-[60px] max-w-screen-xl flex justify-center items-center  mx-auto px-6">
+            <main className="flex  flex-col-reverse lg:flex-row justify-between items-center w-full mx-auto">
                 {/* Animated introduction text */}
                 <div 
                     className="flex flex-col gap-6 lg:w-1/2 text-center lg:text-left" 
