@@ -51,18 +51,18 @@ const NavBar = () => {
                     </div>
 
                     {/* Navigation Links Animation */}
-                    <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky" data-aos="fade-down" data-aos-delay="400">
+                    <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky" >
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
-                                <Link to="landing"  smooth={true} 
+                                <Link to="landing" data-aos="fade-down" data-aos-delay="400"  smooth={true} 
                     duration={1000}   className="block py-2 px-3 cursor-pointer text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">About me</Link></li>
-                            <li><Link to="skills"  smooth={true} 
+                            <li><Link data-aos="fade-down" data-aos-delay="450" to="skills"  smooth={true} 
                     duration={1000}   className="block py-2 px-3 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</Link></li>
-                            <li><Link to="ui-ux"  smooth={true} 
+                            <li><Link to="ui-ux" data-aos="fade-down" data-aos-delay="500"  smooth={true} 
                     duration={1000}   className="block py-2 px-3 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ui & Ux</Link></li>
-                            <li><Link to="frontend"  smooth={true} 
+                            <li><Link to="frontend" data-aos="fade-down" data-aos-delay="550"  smooth={true} 
                     duration={1000}   className="block py-2 px-3 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Frontend</Link></li>
-                            <li><Link to="footer"  smooth={true} 
+                            <li><Link data-aos="fade-down" data-aos-delay="600" to="footer"  smooth={true} 
                     duration={1000} 
                      className="block py-2 px-3 cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link></li>
                         </ul>
